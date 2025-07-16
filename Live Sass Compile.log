@@ -1,0 +1,78 @@
+Compilation Error
+Error: expected "{".
+  ╷
+6 │        styles.scss
+  │                   ^
+  ╵
+  c:\Users\Owner\Desktop\project portfolio html\style2.scss 6:19  root stylesheet
+--------------------
+Compilation Error
+Error: Can't find stylesheet to import.
+  ╷
+3 │ @use 'partials/variables';
+  │ ^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+  c:\Users\Owner\Desktop\project portfolio html\styles.scss 3:1  root stylesheet
+--------------------
+Watching...
+--------------------
+Not Watching...
+--------------------
+Compilation Error
+Error: expected "{".
+  ╷
+6 │        styles.scss
+  │                   ^
+  ╵
+  c:\Users\Owner\Desktop\project portfolio html\style2.scss 6:19  root stylesheet
+--------------------
+Compilation Error
+Error: Can't find stylesheet to import.
+  ╷
+3 │ @use 'partials/variables';
+  │ ^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+  c:\Users\Owner\Desktop\project portfolio html\styles.scss 3:1  root stylesheet
+--------------------
+Watching...
+--------------------
+Not Watching...
+--------------------
+Compilation Error
+Error: expected "{".
+  ╷
+6 │        styles.scss
+  │                   ^
+  ╵
+  c:\Users\Owner\Desktop\project portfolio html\style2.scss 6:19  root stylesheet
+--------------------
+Compilation Error
+Error: Can't find stylesheet to import.
+  ╷
+3 │ @use 'partials/variables';
+  │ ^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+  c:\Users\Owner\Desktop\project portfolio html\styles.scss 3:1  root stylesheet
+--------------------
+Watching...
+--------------------
+Not Watching...
+--------------------
+Compilation Error
+Error: expected "{".
+  ╷
+6 │        styles.scss
+  │                   ^
+  ╵
+  c:\Users\Owner\Desktop\project portfolio html\style2.scss 6:19  root stylesheet
+--------------------
+Compilation Error
+Error: Can't find stylesheet to import.
+  ╷
+3 │ @use 'partials/variables';
+  │ ^^^^^^^^^^^^^^^^^^^^^^^^^
+  ╵
+  c:\Users\Owner\Desktop\project portfolio html\styles.scss 3:1  root stylesheet
+--------------------
+Watching...
+--------------------
