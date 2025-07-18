@@ -8,13 +8,13 @@ body {
 
 top-right-photo {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10;
+  right: 10;
   padding: 10px;
 }
 
 .top-right-photo img {
-  max-width: 150px; /* Adjust size as needed */
+  max-width: 300px; /* Adjust size as needed */
   height: auto;
   border-radius: 8px; /* Optional: adds rounded corners */
 }
