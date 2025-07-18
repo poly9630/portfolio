@@ -141,22 +141,23 @@ a {
   margin: 0;
   font-size: 0.95rem;
 }/*# sourceMappingURL=styles.css.map */
-.background{
+.background {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   object-fit: cover;
-  z-index: -1; /* Make sure images are behind all content */
+  z-index: -2; /* Lower than all other content */
   animation: fade 5s infinite ease-in-out;
 }
-#layer1{
-  z-index: 1;
+
+#layer1 {
+  z-index: -2;
 }
 
-#layer2{
-  z-index: 2;
+#layer2 {
+  z-index: -1;
   animation-delay: 2s;
 }
 
