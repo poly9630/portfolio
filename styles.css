@@ -1,7 +1,10 @@
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   color: #333;
-  background: #3e2ce0;
+  background-image: url('NETWORK.JPEG'), url('cartoon.jpeg');
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
   margin: 0;
   padding: 0;
 }
@@ -139,9 +142,13 @@ a {
   font-size: 0.95rem;
 }/*# sourceMappingURL=styles.css.map */
 .background{
-  position: absolute;
-  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Make sure images are behind all content */
   animation: fade 5s infinite ease-in-out;
 }
 #layer1{
