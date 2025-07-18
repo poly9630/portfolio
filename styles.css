@@ -1,7 +1,7 @@
 body {
   font-family: "Segoe UI", Arial, sans-serif;
   color: #333;
-  background: #8d8aaa;
+  background: #3e2ce0;
   margin: 0;
   padding: 0;
 }
@@ -138,3 +138,32 @@ a {
   margin: 0;
   font-size: 0.95rem;
 }/*# sourceMappingURL=styles.css.map */
+.background{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  animation: fade 5s infinite ease-in-out;
+}
+#layer1{
+  z-index: 1;
+}
+
+#layer2{
+  z-index: 2;
+  animation-delay: 2s;
+}
+
+@keyframes fade{
+  0%{
+    opacity: 0;
+  }
+  25%{
+    opacity: 1;
+  }
+  75%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
