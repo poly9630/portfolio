@@ -1,6 +1,38 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Parallax elements
     const layer1 = document.getElementById('layer1');
     const layer2 = document.getElementById('layer2');
+
+    // Mobile menu elements
+    const menuButton = document.querySelector('.portfolio-header__menu-button');
+    const nav = document.querySelector('.portfolio-header__nav');
+    const menuIcon = document.querySelector('.portfolio-header__menu-icon');
+
+    // Mobile menu toggle
+    menuButton?.addEventListener('click', () => {
+        const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+        menuButton.setAttribute('aria-expanded', !isExpanded);
+        nav?.classList.toggle('is-active');
+        menuIcon?.classList.toggle('is-active');
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!nav?.contains(e.target) && !menuButton?.contains(e.target)) {
+            nav?.classList.remove('is-active');
+            menuButton?.setAttribute('aria-expanded', 'false');
+            menuIcon?.classList.remove('is-active');
+        }
+    });
+
+    // Close menu when pressing Escape
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            nav?.classList.remove('is-active');
+            menuButton?.setAttribute('aria-expanded', 'false');
+            menuIcon?.classList.remove('is-active');
+        }
+    });
     
     let scrollPosition = window.pageYOffset;
 
