@@ -84,14 +84,21 @@ a {
   margin-bottom: 1rem;
 }
 .portfolio-projects__list {
-  display: grid;
+  display: flex;
   gap: 1.5rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
 }
 .portfolio-projects__item {
   background: #28888b;
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  min-width: 300px;
+  flex: 0 0 auto;
+  scroll-snap-align: start;
 }
 .portfolio-projects__item-title {
   font-size: 1.2rem;
