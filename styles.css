@@ -199,24 +199,37 @@ a {
   margin: 0;
   font-size: 0.95rem;
 }/*# sourceMappingURL=styles.css.map */
-.background {
+.parallax-container {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%; /* Larger than viewport to allow movement */
+  height: 120vh;
   object-fit: cover;
-  z-index: -2; /* Lower than all other content */
+  transform: translate(-50%, -50%);
   animation: fade 5s infinite ease-in-out;
+  will-change: transform; /* Optimize performance */
 }
 
 #layer1 {
   z-index: -2;
+  transform: translate3d(-50%, -50%, 0) scale(1.1);
 }
 
 #layer2 {
   z-index: -1;
   animation-delay: 2s;
+  transform: translate3d(-50%, -50%, 0) scale(1.2);
 }
 
 @keyframes fade{
