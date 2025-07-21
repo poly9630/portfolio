@@ -103,6 +103,18 @@ a {
   padding: 1rem 0;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth; /* Smooth scrolling animation */
+  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+  
+  /* Ensure proper padding for snapping */
+  padding-left: calc((100% - 300px) / 2);
+  padding-right: calc((100% - 300px) / 2);
+}
+
+/* Hide scrollbar for Chrome/Safari/Opera */
+.portfolio-projects__list::-webkit-scrollbar {
+  display: none;
 }
 .portfolio-projects__item {
   background: var(--secondary-bg);
@@ -112,8 +124,17 @@ a {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   min-width: 300px; /* WCAG 2.5.5 Target Size (AAA) */
   flex: 0 0 auto;
-  scroll-snap-align: start;
+  scroll-snap-align: center; /* Changed to center for better snapping */
   position: relative; /* For focus indication */
+  transition: transform 0.3s ease; /* Smooth transform animation */
+  margin: 0.5rem; /* Add some spacing */
+}
+
+/* Add subtle scale effect on hover/focus */
+.portfolio-projects__item:hover,
+.portfolio-projects__item:focus-within {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* WCAG 2.4.7 Focus Visible */
