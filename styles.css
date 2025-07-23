@@ -1,4 +1,4 @@
-/* WCAG 2.1 Compliant Styles */
+/* WCAG 2.1 Compliant Styles  for accessibility. i almost missed this part of thew project*/
 :root {
       --primary-color: #122e7a;
       --secondary-color: #28888b;
@@ -32,7 +32,7 @@
       min-height: 100vh;
     }
 
-    /* Header Block */
+    /* Header Block  i hope its as big as my head*/
     .header {
       background: var(--primary-color);
       color: var(--text-light);
@@ -46,7 +46,7 @@
       box-shadow: var(--box-shadow);
     }
 
-    /* Header shrinks on scroll */
+    /* Header shrinks on scroll well it took me a long time to make this work */
     .header_shrunk {
       padding: 0.5rem 0;
     }
@@ -66,7 +66,7 @@
       color: var(--text-light);
     }
 
-    /* Mobile menu button */
+    /* Mobile menu button for your fake phones hehe */
     .header__menu-btn {
       display: none;
       flex-direction: column;
@@ -168,7 +168,7 @@
       transform: scale(1.05);
     }
 
-    /* Button Block */
+    /* Button Block  this buttons need to be awosome am taking my sweet time*/
     .btn {
       display: inline-block;
       padding: 0.75rem 1.5rem;
@@ -304,7 +304,7 @@
       margin-bottom: 3rem;
     }
 
-    /* Scroll snap for horizontal scrolling on mobile */
+    /* Scroll snap for polycap,phone i need this to be classy */
     @media (max-width: 768px) {
       .projects__grid {
         display: flex;
@@ -316,7 +316,7 @@
     }
 
     .project-card {
-      background: rgba(255, 255, 255, 0.95);
+      background: rgba(11, 96, 223, 0.95);
       padding: 2rem;
       border-radius: var(--border-radius);
       box-shadow: var(--box-shadow);
