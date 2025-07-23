@@ -7,94 +7,139 @@
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
   <script src="https://kit.fontawesome.com/c0b0dd45cb.js" crossorigin="anonymous"></script>
-
 </head>
+  
 <body>
   <div class="parallax-container">
     <img src="NETWORK.JPEG" class="background" id="layer1" alt="Network technician configuring a rack of Cisco switches and routers in a well-lit server room with cables neatly organized. The environment appears professional and focused. No visible text in the image." />
     <img src="cartoon.jpeg" class="background" id="layer2" alt="Cartoon illustration background" />
   </div>
-  <header class="portfolio-header">
-    <div class="portfolio-header__container">
-      <h1 class="portfolio-header__title">Polycap Ontomwa</h1>
-      <button class="portfolio-header__menu-button" aria-label="Toggle menu" aria-expanded="false">
-        <span class="portfolio-header__menu-icon"></span>
+  <header class="header" id="header">
+    <div class="header__container">
+      <!-- Logo positioned on left (desktop) -->
+      <div class="header__logo">
+        <h1 class="header__title">Polycap Ontomwa</h1>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <button class="header__menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <span class="header__menu-icon"></span>
+        <span class="header__menu-icon"></span>
+        <span class="header__menu-icon"></span>
       </button>
-      <nav class="portfolio-header__nav" aria-label="Main navigation">
-        <ul class="portfolio-header__list">
-          <li class="portfolio-header__item"><a href="#about" class="portfolio-header__link">About</a></li>
-          <li class="portfolio-header__item"><a href="#skills" class="portfolio-header__link">Skills</a></li>
-          <li class="portfolio-header__item"><a href="#projects" class="portfolio-header__link">Projects</a></li>
-          <li class="portfolio-header__item"><a href="#experience" class="portfolio-header__link">Experience</a></li>
-          <li class="portfolio-header__item"><a href="#education" class="portfolio-header__link">Education</a></li>
-          <li class="portfolio-header__item"><a href="#contact" class="portfolio-header__link">Contact</a></li>
-        </ul>
+      <nav class="header__nav" aria-label="Main navigation">
+        <ul class="header__nav-list">
+          <li class="header__nav-item"><a href="#about" class="header__nav-link">About</a></li>
+          <li class="header__nav-item"><a href="#skills" class="header__nav-link">Skills</a></li>
+          <li class="header__nav-item"><a href="#projects" class="header__nav-link">Projects</a></li>
+          <li class="header__nav-item"><a href="#contact" class="header__nav-link">Contact</a></li>
+          <li class="header__nav-item"><a href="#resume" class="header__nav-link">Resume</a></li>
+        </ul>  
       </nav>
     </div>
   </header>
   
-  <div class="top-right-photo">
-    <img src="your-photo.jpg" alt="My Portfolio Photo">
-  </div>
-
-  <main class="portfolio-main">
-    <section id="about" class="portfolio-about">
-      <h2 class="portfolio-about__title">About Me</h2>
-      <p class="portfolio-about__description">
-        CompTIA Network+ certified Network Technician with hands-on experience in configuring, troubleshooting, and maintaining network systems. <br> Proficient in supporting desktop environments, managing Cisco devices, and ensuring network security.<br> Adept at collaborating with teams and delivering exceptional technical support in fast-paced environments.
-      </p>
-    </section>
-
-    <section id="skills" class="portfolio-about">
-      <h2 class="portfolio-about__title">Skills</h2>
-      <ul class="portfolio-about__description">
-        <li>Network Administration (Cisco Routers & Switches, VPN, VoIP)</li>
-        <li>Operating Systems (Windows, Mac OS, Linux)</li>
-        <li>Microsoft 365, Azure, Remote Desktop Services</li>
-        <li>Network Security, Data Center Operations, SSH</li>
-        <li>Ticketing Systems (ServiceNow, Zendesk, Freshdesk, Jira, Netsuite)</li>
-        <li>Technical Support, Troubleshooting, Customer Service</li>
-        <li>Virtualization (VMware, Proxmox)</li>
-        <li>Web Development (HTML, CSS, JavaScript)</li>
-        <li>Home Lab Management (Cisco, Proxmox, Apache, Plex Server)</li>
-        <li>Proxmox, Apache, Plex Server, Virtual Machines</li>
-      </ul>
-    </section>
-
-    <section id="projects" class="portfolio-projects">
-      <h2 class="portfolio-projects__title">Projects</h2>
-      <div class="portfolio-projects__list">
-        <article class="portfolio-projects__item">
-          <h3 class="portfolio-projects__item-title">Home Lab Network Project (2023 – Present)</h3>
-          <ul class="portfolio-projects__item-description">
-            <li>Managed a home lab with Cisco router, switches, and virtual machines for home automation and security.</li>
-            <li>Configured Plex and Apache web servers, implemented backup solutions, and maintained network security.</li>
-            <li>Ensured data integrity and accessibility through regular updates and remote desktop services.</li>
-          </ul>
-        </article>
-        <article class="portfolio-projects__item">
-          <h3 class="portfolio-projects__item-title">Personal portfolio project (2025)</h3>
-          <ul class="portfolio-projects__item-description">
-            <li>Designed and developed a personal portfolio website to showcase projects and skills.</li>
-            <li>Implemented responsive design principles to ensure compatibility across devices.</li>
-            <li>Integrated contact forms and interactive elements to enhance user engagement.</li>
-            <li>Optimized website performance for faster load times and improved user experience.</li>
-          </ul>
-        </article>
-        <article class="portfolio-projects__item">
-          <h3 class="portfolio-projects__item-title">Network devices refresher (2024)</h3>
-          <ul class="portfolio-projects__item-description">
-            <li>Conducted a comprehensive refresh on network devices including routers, switches, and firewalls on the rack</li>
-            <li>Updated firmware and configurations to enhance performance and security.</li>
-            <li>Documented changes and provided training to team members on new features and best practices.</li>
-            <li>Implemented security measures for a small business network, including firewall configuration and VPN setup.</li>
-            <li>Conducted vulnerability assessments and applied patches to enhance network security.</li>
-            <li>Documented network configurations and provided training to staff on security best practices.</li>
-          </ul>
-        </article>
+  <main class="main">
+  
+    <section class="hero" id="about">
+      <div class="hero__container">  
+        <div class="hero__content">
+          <h2 class="hero__heading">Network Technician & IT Support engineer</h2>
+          <p class="hero__description">
+            CompTIA Network+ certified Network Technician with hands-on experience in configuring, troubleshooting, and maintaining network systems. Proficient in supporting desktop environments, managing Cisco devices, and ensuring network security.
+          </p>
+          
+          <div class="hero__buttons">
+            <a href="#projects" class="btn btn_primary">View Projects</a>
+            <a href="#contact" class="btn btn_secondary">Contact Me</a>
+          </div>
+        </div>
+        
+        <div class="hero__photo">
+          <img src="your-photo.jpg" alt="Polycap Ontomwa - Network Technician" class="hero__headshot">
+        </div>
       </div>
     </section>
+#skills section
+  <section class="skills" id="skills">
+      <div class="skills__container">
+        <h2 class="skills__title">Technical Skills</h2>
+        <div class="skills__grid">
+          <div class="skill-card">
+            <h3 class="skill-card__title">Networking</h3>
+            <ul class="skill-card__list">
+              <li class="skill-card__item">Cisco Routers & Switches</li>
+              <li class="skill-card__item">Network Security & VPN</li>
+              <li class="skill-card__item">VoIP Implementation</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-card__title">Systems</h3>
+            <ul class="skill-card__list">
+              <li class="skill-card__item">Windows, Mac OS, Linux</li>
+              <li class="skill-card__item">Microsoft 365, Azure</li>
+              <li class="skill-card__item">Virtualization (VMware, Proxmox)</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <h3 class="skill-card__title">Tools & Platforms</h3>
+            <ul class="skill-card__list">
+              <li class="skill-card__item">ServiceNow, Zendesk, Jira</li>
+              <li class="skill-card__item">SSH, Remote Desktop Services</li>
+              <li class="skill-card__item">Data Center Operations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section> 
+#projects section 
+  <section class="projects" id="projects">
+      <div class="projects__container">
+        <h2 class="projects__title">Latest Projects</h2>
+        <div class="projects__grid">
+          <!-- Project Card 1 -->
+          <article class="project-card">
+            <h3 class="project-card__title">Home Lab Network Project</h3>
+            <p class="project-card__description">
+              Managed a comprehensive home lab with Cisco router, switches, and virtual machines for home automation and security. Configured Plex and Apache web servers with backup solutions.
+            </p>
+            <div class="project-card__meta">
+              <span class="project-card__date">2023 – Present</span>
+              <span class="project-card__tech">Cisco, Proxmox, Apache</span>
+            </div>
+          </article>
 
+          <!-- Project Card 2 -->
+          <article class="project-card">
+            <h3 class="project-card__title">Personal Portfolio Website</h3>
+            <p class="project-card__description">
+              Designed and developed a responsive personal portfolio website to showcase projects and skills. Implemented modern web standards and accessibility features.
+            </p>
+            <div class="project-card__meta">
+              <span class="project-card__date">2025</span>
+              <span class="project-card__tech">HTML, CSS, JavaScript</span>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article class="project-card">
+            <h3 class="project-card__title">Network Infrastructure Refresh</h3>
+            <p class="project-card__description">
+              Conducted comprehensive refresh of network devices including routers, switches, and firewalls. Updated firmware, enhanced security, and documented configurations.
+            </p>
+            <div class="project-card__meta">
+              <span class="project-card__date">2024</span>
+              <span class="project-card__tech">Cisco, Network Security</span>
+            </div>
+          </article>
+        </div>
+        
+        <div class="projects__more">
+          <a href="#all-projects" class="btn btn_outline">View All Projects</a>
+        </div>
+      </div>
+    </section>
+#experience section my trials and conqours
     <section id="experience" class="portfolio-projects">
       <h2 class="portfolio-projects__title">Experience</h2>
       <div class="portfolio-projects__list">
@@ -153,32 +198,70 @@
         <li>Juniper Network Security Associate Certification</li>
       </ul>
     </section>
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i> polycapfalcone@gmail.com</p>
-                    <p><i class="fa-solid fa-square-phone"></i> +16514780319</p>
-                </div>
-                <div class="social-icons">
-                  <h2 class="sub-title">Connect with Me</h2>
-                    <p><a href="https://github.com/poly9630"><i class="fa-brands fa-github"></i></a></p>
-                    <p><a href="www.linkedin.com/in/polycap-onchonga"><i class="fa-brands fa-linkedin"></i></a></p>
-                </div>
-                <section id="contact" class="portfolio-contact">
-      <h2 class="portfolio-contact__title">Message me</h2>
-      <form class="portfolio-contact__form">
-        <input type="text" class="portfolio-contact__input" placeholder="Your Name" required />
-        <input type="email" class="portfolio-contact__input" placeholder="Your Email" required />
-        <textarea class="portfolio-contact__textarea" placeholder="Your Message" required></textarea>
-        <button type="submit" class="portfolio-contact__button">Send</button>
-      </form>
+
+    <section class="contact" id="contact">
+      <div class="contact__container">
+        <div class="contact__info">
+          <h2 class="contact__title">Get In Touch</h2>
+          <p class="contact__description">
+            Ready to discuss your next network project or IT challenge? Let's connect and explore how my expertise can help your organization.
+          </p>
+          
+          <div class="contact__details">
+            <div class="contact__detail">
+              <i class="fa-solid fa-paper-plane contact__icon" aria-hidden="true"></i>
+              <span class="contact__text">polycapfalcone@gmail.com</span>
+            </div>
+            <div class="contact__detail">
+              <i class="fa-solid fa-square-phone contact__icon" aria-hidden="true"></i>
+              <span class="contact__text">+1 (651) 478-0319</span>
+            </div>
+          </div>
+
+          <div class="contact__social">
+            <h3 class="contact__social-title">Connect With Me</h3>
+            <div class="social-icons">
+              <a href="https://github.com/poly9630" class="social-icons__link" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/polycap-onchonga" class="social-icons__link" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact__form-wrapper">
+          <form class="contact-form" action="#" method="POST">
+            <h3 class="contact-form__title">Send a Message</h3>
+            <div class="contact-form__group">
+              <label for="name" class="contact-form__label">Your Name</label>
+              <input type="text" id="name" name="name" class="contact-form__input" required />
+            </div>
+            <div class="contact-form__group">
+              <label for="email" class="contact-form__label">Your Email</label>
+              <input type="email" id="email" name="email" class="contact-form__input" required />
+            </div>
+            <div class="contact-form__group">
+              <label for="message" class="contact-form__label">Your Message</label>
+              <textarea id="message" name="message" class="contact-form__textarea" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="contact-form__btn">Send Message</button>
+          </form>
+        </div>
+      </div>
     </section>
   </main>
-
-  <footer class="portfolio-footer">
-    <p class="portfolio-footer__text">&copy; 2025 Polycap Ontomwa. All rights reserved.</p>
+#footer here all rights are reserved brothers and sisters
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">&copy; 2025 Polycap Ontomwa. All rights reserved.</p>
+      <div class="footer__links">
+        <a href="#privacy" class="footer__link">Privacy Policy</a>
+        <a href="#terms" class="footer__link">Terms of Service</a>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
