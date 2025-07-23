@@ -107,13 +107,13 @@
       outline-offset: 2px;
     }
 
-    /* Main Content */
+    /* Main Content for my whole project lies here */
     .main {
       margin-top: 80px;
       padding: 2rem 0;
     }
 
-    /* Hero Block */
+    /* Hero Block i used this creative words to explore who i am when writing code */
     .hero {
       padding: 4rem 0;
     }
@@ -220,7 +220,7 @@
       color: var(--text-dark);
     }
 
-    /* Skills Block */
+    /* Skills Block  well i took time to gain these*/
     .skills {
       padding: 4rem 0;
       background: rgba(255, 255, 255, 0.95);
@@ -278,7 +278,7 @@
       border-bottom: none;
     }
 
-    /* Projects Block */
+    /* Projects Block  well earned according to me*/
     .projects {
       padding: 4rem 0;
     }
@@ -482,7 +482,7 @@
       transform: translateY(-2px);
     }
 
-    /* Footer Block */
+    /* Footer Block for credits */
     .footer {
       background: var(--primary-color);
       color: var(--text-light);
@@ -516,7 +516,7 @@
       color: var(--accent-color);
     }
 
-    /* Responsive Design */
+    /* Responsive Design make it happen */
     @media (max-width: 768px) {
       /* Mobile menu */
       .header__menu-btn {
@@ -579,7 +579,7 @@
       }
     }
 
-    /* Accessibility improvements */
+    /* Accessibility improvements on my code */
     @media (prefers-reduced-motion: reduce) {
       * {
         animation: none !important;
