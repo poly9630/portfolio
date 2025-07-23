@@ -355,6 +355,65 @@
     .projects__more {
       text-align: center;
     }
+    /*education sections for all my trials*/
+    .education{
+      padding:4rem 0;
+    }
+    .education__container{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .education__title{
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: var(--text-light);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 1.0);
+    }
+
+    .education__grid{
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    @media (max-width: 768px){
+      .projects__grid{
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
+
+    .education-card{
+      background: rgba(0, 49, 83);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+      transition: var(--transition);
+      backdrop-filter: blur(10px);
+      scroll-snap-align: center;
+      min-width: 350px;
+    }
+
+    .education-card__title{
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+     .education-card__description{
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+     }
+
+
 
     /* Contact Block */
     .contact {
