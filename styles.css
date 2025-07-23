@@ -316,7 +316,7 @@
     }
 
     .project-card {
-      background: rgba(11, 96, 223, 0.95);
+      background: rgba(188, 11, 223, 0.95);
       padding: 2rem;
       border-radius: var(--border-radius);
       box-shadow: var(--box-shadow);
