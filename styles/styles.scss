@@ -1,0 +1,604 @@
+/* WCAG 2.1 Compliant Styles  for accessibility. i almost missed this part of thew project*/
+:root {
+      --primary-color: #127a63;
+      --secondary-color: #28888b;
+      --accent-color: #4ecca3;
+      --text-dark: #1f1f1f;
+      --text-light: #ffffff;
+      --bg-light: #f8f9fa;
+      --focus-color: #4a90e2;
+      --border-radius: 8px;
+      --transition: all 0.3s ease;
+      --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      --font-family: "Segoe UI", Arial, sans-serif;
+    }
+
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+  body {
+      font-family: var(--font-family);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--text-dark);
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+    }
+
+    /* Header Block  i hope its as big as my head*/
+    .header {
+      background: var(--primary-color);
+      color: var(--text-light);
+      padding: 1rem 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: var(--transition);
+      box-shadow: var(--box-shadow);
+    }
+
+    /* Header shrinks on scroll well it took me a long time to make this work */
+    .header_shrunk {
+      padding: 0.5rem 0;
+    }
+
+    .header__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header__title {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: var(--text-light);
+    }
+
+    /* Mobile menu button for your fake phones hehe */
+    .header__menu-btn {
+      display: none;
+      flex-direction: column;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      gap: 4px;
+    }
+
+    .header__menu-icon {
+      width: 25px;
+      height: 3px;
+      background: var(--text-light);
+      transition: var(--transition);
+    }
+
+    .header__nav-list {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .header__nav-link {
+      color: var(--text-light);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 0.5rem;
+      border-radius: var(--border-radius);
+      transition: var(--transition);
+    }
+
+    .header__nav-link:hover,
+    .header__nav-link:focus {
+      color: var(--accent-color);
+      background: rgba(255, 255, 255, 0.1);
+      outline: 2px solid var(--focus-color);
+      outline-offset: 2px;
+    }
+
+    /* Main Content for my whole project lies here */
+    .main {
+      margin-top: 80px;
+      padding: 2rem 0;
+    }
+
+    /* Hero Block i used this creative words to explore who i am when writing code */
+    .hero {
+      padding: 4rem 0;
+    }
+
+    .hero__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero__heading {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      color: var(--text-light);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero__description {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+      color: var(--text-light);
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero__buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .hero__photo {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero__headshot {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid var(--accent-color);
+      box-shadow: var(--box-shadow);
+      transition: var(--transition);
+    }
+
+    .hero__headshot:hover {
+      transform: scale(1.05);
+    }
+
+    /* Button Block  this buttons need to be awosome am taking my sweet time*/
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--border-radius);
+      text-decoration: none;
+      font-weight: 600;
+      transition: var(--transition);
+      border: 2px solid transparent;
+      cursor: pointer;
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn_primary {
+      background: var(--accent-color);
+      color: var(--text-dark);
+    }
+
+    .btn_primary:hover,
+    .btn_primary:focus {
+      background: #34b38a;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn_secondary {
+      background: transparent;
+      color: var(--text-light);
+      border-color: var(--text-light);
+    }
+
+    .btn_secondary:hover,
+    .btn_secondary:focus {
+      background: var(--text-light);
+      color: var(--text-dark);
+    }
+
+    .btn_outline {
+      background: transparent;
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+
+    .btn_outline:hover,
+    .btn_outline:focus {
+      background: var(--accent-color);
+      color: var(--text-dark);
+    }
+
+    /* Skills Block  well i took time to gain these*/
+    .skills {
+      padding: 4rem 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+    }
+
+    .skills__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .skills__title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: var(--text-dark);
+    }
+
+    .skills__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+
+    .skill-card {
+      background: var(--text-light);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+      transition: var(--transition);
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .skill-card__title {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .skill-card__list {
+      list-style: none;
+    }
+
+    .skill-card__item {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .skill-card__item:last-child {
+      border-bottom: none;
+    }
+
+    /* Projects Block  well earned according to me*/
+    .projects {
+      padding: 4rem 0;
+    }
+
+    .projects__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .projects__title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      color: var(--text-light);
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .projects__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3rem;
+    }
+
+    /* Scroll snap for polycap,phone i need this to be classy */
+    @media (max-width: 768px) {
+      .projects__grid {
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 1rem;
+        padding-bottom: 1rem;
+      }
+    }
+
+    .project-card {
+      background: rgba(188, 11, 223, 0.95);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--box-shadow);
+      transition: var(--transition);
+      backdrop-filter: blur(10px);
+      scroll-snap-align: center;
+      min-width: 350px;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-card__title {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .project-card__description {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .project-card__meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+      color: #e9c112;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .projects__more {
+      text-align: center;
+    }
+
+    /* Contact Block */
+    .contact {
+      padding: 4rem 0;
+      background: rgba(92, 48, 48, 0.95);
+      backdrop-filter: blur(10px);
+    }
+
+    .contact__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .contact__title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .contact__description {
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .contact__details {
+      margin-bottom: 2rem;
+    }
+
+    .contact__detail {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .contact__icon {
+      font-size: 1.2rem;
+      color: var(--accent-color);
+    }
+
+    .contact__social-title {
+      margin-bottom: 1rem;
+      color: var(--primary-color);
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .social-icons__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--accent-color);
+      color: var(--text-dark);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .social-icons__link:hover,
+    .social-icons__link:focus {
+      background: var(--primary-color);
+      color: var(--text-light);
+      transform: translateY(-2px);
+    }
+
+    /* Contact Form Block */
+    .contact-form__title {
+      margin-bottom: 1.5rem;
+      color: var(--primary-color);
+    }
+
+    .contact-form__group {
+      margin-bottom: 1.5rem;
+    }
+
+    .contact-form__label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+
+    .contact-form__input,
+    .contact-form__textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 2px solid #ddd;
+      border-radius: var(--border-radius);
+      font-family: var(--font-family);
+      font-size: 1rem;
+      transition: var(--transition);
+    }
+
+    .contact-form__input:focus,
+    .contact-form__textarea:focus {
+      outline: none;
+      border-color: var(--focus-color);
+      box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+    }
+
+    .contact-form__btn {
+      background: var(--accent-color);
+      color: var(--text-dark);
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: var(--border-radius);
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      min-height: 44px;
+    }
+
+    .contact-form__btn:hover,
+    .contact-form__btn:focus {
+      background: #34b38a;
+      transform: translateY(-2px);
+    }
+
+    /* Footer Block for credits */
+    .footer {
+      background: var(--primary-color);
+      color: var(--text-light);
+      padding: 2rem 0;
+    }
+
+    .footer__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer__links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer__link {
+      color: var(--text-light);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .footer__link:hover,
+    .footer__link:focus {
+      color: var(--accent-color);
+    }
+
+    /* Responsive Design make it happen */
+    @media (max-width: 768px) {
+      /* Mobile menu */
+      .header__menu-btn {
+        display: flex;
+      }
+
+      .header__nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--primary-color);
+        box-shadow: var(--box-shadow);
+      }
+
+      .header__nav_open {
+        display: block;
+      }
+
+      .header__nav-list {
+        flex-direction: column;
+        gap: 0;
+        padding: 1rem;
+      }
+
+      .header__nav-link {
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Hero mobile layout */
+      .hero__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero__photo {
+        order: -1;
+      }
+
+      .hero__heading {
+        font-size: 2rem;
+      }
+
+      .hero__buttons {
+        justify-content: center;
+      }
+
+      /* Contact mobile layout */
+      .contact__container {
+        grid-template-columns: 1fr;
+      }
+
+      /* Footer mobile layout */
+      .footer__container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    /* Accessibility improvements on my code */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+    /* Focus styles for better keyboard navigation */
+    *:focus {
+      outline: 2px solid var(--focus-color);
+      outline-offset: 2px;
+    }
+
+    /* High contrast mode support */
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --text-dark: #ffffff;
+        --text-light: #1f1f1f;
+        --bg-light: #2d3a4b;
+      }
+    }
